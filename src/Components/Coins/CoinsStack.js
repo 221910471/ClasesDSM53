@@ -1,19 +1,33 @@
-// importar react
-import React from 'react';
-//importar la lib de react navigation stack
-import {createStackNavigatior} from '@react-navigation/stack';
-//declaración de const de Stack
-const Stack = createStackNavigatior();
+//importar react
+import React from 'react'; 
+//import libreria stack
+import { createStackNavigator } from '@react-navigation/stack';
 
-//importamos el componente CoinScreen
-import CoinsinScreen from './CoinScreen;'
+//importamos nuesto componente de CoinsScreen 
+import CoinsScreen from './CoinsScreen';
+import CoinDetailScreen from './CoinDetailScreen';
 
-//declarar nuetsro componente de los tipos stateless
+//declarar constante para stack
+const Stack = createStackNavigator();
 
-const CoinsStack = () =>{
+
+//empez<mos a construir nuesto componente de tipo stalles
+
+const CoinsStack = () => {
     return(
         <Stack.Navigator>
-            <Stack.Screen name= "Coins" component={CoinScreen} />
+
+            <Stack.Screen name="Coins"  
+            component={CoinsScreen}
+            />
+        
+            <Stack.Screen name="DetailsComponents"  
+            component={CoinDetailsScreen}
+            />
+
         </Stack.Navigator>
+
     )
 }
+
+export default CoinsStack;

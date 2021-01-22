@@ -1,21 +1,19 @@
-//importar react
-import React, {componente} from 'react';
+//importamos react
+import React, { Component } from 'react';
 //importar los componentes nativos de react
-import {View, Text} from 'react-native';
-//estos componentes son nativos de react
+import {View, Text } from 'react-native';
 
-//declaramos nuestro componente de tipo clase
+//declaramos nuestro componente de tipo class
 
-//esta clase es la forma basica de estos componentes
-export default  class CoinScreen extends Components{
+class CoinsScreen extends Component{
     render(){
-        //siempre debe de llevar el return dentro del render para renderizar el contenido
         return(
             <View>
-                <Text>Mi primer pantalla de Coins Screen</Text> 
+                <Text>Mi primer pantalla realizado con los alumnos del DSM-54</Text>
             </View>
-
-        );
+        )
     }
 
 }
+
+export default CoinsScreen;
