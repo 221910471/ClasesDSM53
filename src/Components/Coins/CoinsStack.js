@@ -18,9 +18,11 @@ const CoinsStack = () => {
         <Stack.Navigator>
 
             <Stack.Screen name="Coins"  
+            name="stack"
             component={CoinsScreen}
             />
-        
+        {/* {importamos nuestra pantalla detalle} */}
+
             <Stack.Screen name="DetailsComponents"  
             component={CoinDetailsScreen}
             />
