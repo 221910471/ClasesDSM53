@@ -24,7 +24,7 @@ const CoinsStack = () => {
         {/* {importamos nuestra pantalla detalle} */}
 
             <Stack.Screen name="DetailsComponents"  
-            component={CoinDetailsScreen}
+            component={CoinDetailScreen}
             />
 
         </Stack.Navigator>
