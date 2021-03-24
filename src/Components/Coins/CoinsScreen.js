@@ -13,7 +13,8 @@ class CoinsScreen extends Component{
     //declaramos una funcion para llamar con props la pista de detalle
     //handlesPress es para que cuando presione suceda lo que esta dentro
     handlesPress = () => {
-        console.log("di clic en el boton ir a pantalla de detalle");
+        console.log("di clic en el boton ir a pantalla de detalle", this.props);
+        this.props.navigation.navigate('DetailsComponent');
     }
     render(){
         return(

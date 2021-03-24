@@ -12,6 +12,7 @@ class CoinDetailScreen extends Component{
         return(
             <View style={styles.container}>
                 <Text  style={styles.btnText}>Esta es mi pantalla de detalles</Text>
+                
                 <Pressable style = {styles.btn} onPress={this.handlesPress}><Text style={styles.btnText}>Estos son mis detalles</Text></Pressable>
             </View>
 
